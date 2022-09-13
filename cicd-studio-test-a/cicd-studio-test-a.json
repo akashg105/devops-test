@@ -1,0 +1,20 @@
+{
+  "name" : "cicd-studio-test-a",
+  "role" : "Admin",
+  "executionProperty" : {
+    "maxConcurrentRuns" : 1
+  },
+  "command" : {
+    "name" : "glueetl",
+    "scriptLocation" : "s3://aws-glue-assets-590186200215-us-west-2/scripts/cicd-studio-test-a",
+    "pythonVersion" : "3"
+  },
+  "maxRetries" : 0,
+  "allocatedCapacity" : 10,
+  "timeout" : 2880,
+  "maxCapacity" : 10.0,
+  "glueVersion" : "2.0",
+  "numberOfWorkers" : 10,
+  "workerType" : "G.1X",
+  "codeGenConfigurationNodes" : "{\"node-1\":{\"S3JsonSource\":{\"AdditionalOptions\":{\"EnableSamplePath\":false},\"Exclusions\":[],\"Name\":\"myJson\",\"Paths\":[\"s3://kguptn-iad-test\"]}}}"
+}
